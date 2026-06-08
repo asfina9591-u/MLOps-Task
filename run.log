@@ -30,3 +30,10 @@ pandas.errors.EmptyDataError: No columns to parse from file
 2026-06-08 20:54:48,518 - INFO - Generating signals
 2026-06-08 20:54:48,518 - INFO - Metrics: {'version': 'v1', 'rows_processed': 5, 'metric': 'signal_rate', 'value': 0.2, 'latency_ms': 17, 'seed': 42, 'status': 'success'}
 2026-06-08 20:54:48,518 - INFO - Job completed successfully
+2026-06-08 22:08:00,587 - INFO - Job started
+2026-06-08 22:08:00,591 - INFO - Config loaded | seed=42, window=5, version=v1
+2026-06-08 22:08:00,599 - INFO - Rows loaded: 5
+2026-06-08 22:08:00,599 - INFO - Computing rolling mean
+2026-06-08 22:08:00,607 - INFO - Generating signals
+2026-06-08 22:08:00,611 - INFO - Metrics: {'version': 'v1', 'rows_processed': 5, 'metric': 'signal_rate', 'value': 0.2, 'latency_ms': 21, 'seed': 42, 'status': 'success'}
+2026-06-08 22:08:00,611 - INFO - Job completed successfully
