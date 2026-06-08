@@ -1,0 +1,25 @@
+2026-06-08 20:04:01,107 - INFO - Job started
+2026-06-08 20:04:01,121 - INFO - Config loaded | seed=42, window=5, version=v1
+2026-06-08 20:04:01,122 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\ASFINA\OneDrive\Desktop\mlops-task\run.py", line 65, in main
+    df = pd.read_csv(args.input)
+  File "C:\Users\ASFINA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\ASFINA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\ASFINA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\ASFINA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "C:\Users\ASFINA\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+2026-06-08 20:05:56,922 - INFO - Job started
+2026-06-08 20:05:56,922 - INFO - Config loaded | seed=42, window=5, version=v1
+2026-06-08 20:05:56,953 - INFO - Rows loaded: 5
+2026-06-08 20:05:56,953 - INFO - Computing rolling mean
+2026-06-08 20:05:56,955 - INFO - Generating signals
+2026-06-08 20:05:56,961 - INFO - Metrics: {'version': 'v1', 'rows_processed': 5, 'metric': 'signal_rate', 'value': 0.2, 'latency_ms': 41, 'seed': 42, 'status': 'success'}
+2026-06-08 20:05:56,961 - INFO - Job completed successfully
